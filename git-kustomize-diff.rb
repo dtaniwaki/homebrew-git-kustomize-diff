@@ -2,7 +2,7 @@ class GitKustomizeDiff < Formula
   desc "Diff tool for Kustomize"
   homepage "https://github.com/dtaniwaki/git-kustomize-diff"
   baseurl = "https://github.com/dtaniwaki/git-kustomize-diff/releases/download"
-  version "v0.1.6"
+  version "v0.2.0"
   license "Apache-2.0"
   bottle :unneeded
   depends_on "git"
@@ -11,12 +11,12 @@ class GitKustomizeDiff < Formula
     if Hardware::CPU.arm?
       archive_name = "git-kustomize-diff_darwin_arm64.tar.gz"
       url baseurl + "/" + version + "/" + archive_name
-      sha256 "12c6c09cd92f5ac12bb05ee650ef9200993d84c502cb5d8f065624b4227fcb6e"
+      sha256 "77af07a0eaac73b728d642361a26eb3587b04fe37c85cf79a29ea267883352ef"
     end
     if Hardware::CPU.intel?
       archive_name = "git-kustomize-diff_darwin_x86_64.tar.gz"
       url baseurl + "/" + version + "/" + archive_name
-      sha256 "9fc5de0838dfecb412fc9d38a1e473e2851c66f6ca7dec6270089880b42e0fe1"
+      sha256 "4d15d54bc5c7aea55e84659c8616244e6489159a17275591b7718925a4a97ac9"
     end
   end
 
