@@ -4,7 +4,6 @@ class GitKustomizeDiff < Formula
   baseurl = "https://github.com/dtaniwaki/git-kustomize-diff/releases/download"
   version "v0.2.0"
   license "Apache-2.0"
-  bottle :unneeded
   depends_on "git"
 
   on_macos do
